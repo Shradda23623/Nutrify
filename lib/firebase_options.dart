@@ -57,15 +57,18 @@ class DefaultFirebaseOptions {
     messagingSenderId: '671908543018',
     projectId: 'nutrify-52ebf',
     storageBucket: 'nutrify-52ebf.firebasestorage.app',
+    iosClientId: '671908543018-ubkq6nmci85hh0rd5952hsuldnmqfe6k.apps.googleusercontent.com',
     iosBundleId: 'com.example.nutrify',
   );
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'YOUR_WEB_API_KEY',
-    appId: 'YOUR_WEB_APP_ID',
-    messagingSenderId: 'YOUR_SENDER_ID',
-    projectId: 'YOUR_PROJECT_ID',
-    storageBucket: 'YOUR_PROJECT_ID.appspot.com',
-    authDomain: 'YOUR_PROJECT_ID.firebaseapp.com',
+    apiKey: 'AIzaSyCf9H6pWrkf8UsvSBpWu-6OwfjtQOUkSmw',
+    appId: '1:671908543018:web:0a68444958d229652a6153',
+    messagingSenderId: '671908543018',
+    projectId: 'nutrify-52ebf',
+    authDomain: 'nutrify-52ebf.firebaseapp.com',
+    storageBucket: 'nutrify-52ebf.firebasestorage.app',
+    measurementId: 'G-KX75Z7ZB8X',
   );
+
 }
