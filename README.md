@@ -82,7 +82,8 @@ A cross-platform nutrition, fitness, and wellness tracker built with Flutter and
 
 ## Demo
 
-- **Download APK:** see the [Releases](https://github.com/Shradda23623/Nutrify/releases) page.
+- **Try it in your browser:** [nutrify-52ebf.web.app](https://nutrify-52ebf.web.app) — live web build, no install required. Camera, barcode scanning, and BLE features are mobile-only; everything else works in the browser.
+- **Download APK:** [latest release](https://github.com/Shradda23623/Nutrify/releases/latest) — install on Android for the full experience.
 - **Demo video:** _(add a YouTube or Loom link here once recorded)_
 
 ## Features
