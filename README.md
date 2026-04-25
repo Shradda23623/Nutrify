@@ -1,6 +1,82 @@
 # Nutrify
 
+![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-3.11-0175C2?logo=dart&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-Auth%20%7C%20Firestore%20%7C%20Storage-FFCA28?logo=firebase&logoColor=black)
+![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20iOS%20%7C%20Web-lightgrey)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+
 A cross-platform nutrition, fitness, and wellness tracker built with Flutter and Firebase. Nutrify combines food scanning, calorie and micronutrient tracking, activity monitoring, and habit tools (water, sleep, fasting, reminders) into a single app.
+
+## Screenshots
+
+### Onboarding & Profile
+
+<p align="center">
+  <img src="docs/screenshots/splashscreen.jpeg" width="220" alt="Splash screen" />
+  <img src="docs/screenshots/login.jpeg" width="220" alt="Login" />
+  <img src="docs/screenshots/myprofile.jpeg" width="220" alt="My profile" />
+</p>
+
+### Home & Tools
+
+<p align="center">
+  <img src="docs/screenshots/home.jpeg" width="220" alt="Home dashboard" />
+  <img src="docs/screenshots/tools_and_features.jpeg" width="220" alt="Tools and features" />
+  <img src="docs/screenshots/app_icon.jpeg" width="220" alt="App icon" />
+</p>
+
+### Food & Nutrition Tracking
+
+<p align="center">
+  <img src="docs/screenshots/myfood.jpeg" width="220" alt="My food" />
+  <img src="docs/screenshots/calories_tracker.jpeg" width="220" alt="Calories tracker" />
+  <img src="docs/screenshots/micronutrients_tracker.jpeg" width="220" alt="Micronutrients tracker" />
+</p>
+<p align="center">
+  <img src="docs/screenshots/glycemic_tracker.jpeg" width="220" alt="Glycemic tracker" />
+  <img src="docs/screenshots/fasting_tracker.jpeg" width="220" alt="Intermittent fasting tracker" />
+</p>
+
+### Body & Wellness
+
+<p align="center">
+  <img src="docs/screenshots/weight_tracker.jpeg" width="220" alt="Weight tracker" />
+  <img src="docs/screenshots/measurements_tracker.jpeg" width="220" alt="Body measurements" />
+  <img src="docs/screenshots/sleep_tracker.jpeg" width="220" alt="Sleep tracker" />
+</p>
+<p align="center">
+  <img src="docs/screenshots/BMI_calculator.jpeg" width="220" alt="BMI calculator" />
+  <img src="docs/screenshots/TDEE_calculator.jpeg" width="220" alt="TDEE calculator" />
+</p>
+
+### Activity
+
+<p align="center">
+  <img src="docs/screenshots/step_tracker.jpeg" width="220" alt="Step tracker" />
+  <img src="docs/screenshots/workout.jpeg" width="220" alt="Workout" />
+  <img src="docs/screenshots/workout_tracker.jpeg" width="220" alt="Workout tracker" />
+</p>
+
+### Progress, Reminders & Devices
+
+<p align="center">
+  <img src="docs/screenshots/progress_tracker.jpeg" width="220" alt="Progress tracker" />
+  <img src="docs/screenshots/reminder.jpeg" width="220" alt="Reminders" />
+  <img src="docs/screenshots/connected_devices.jpeg" width="220" alt="Connected devices" />
+</p>
+
+### Settings
+
+<p align="center">
+  <img src="docs/screenshots/settings_1.jpeg" width="220" alt="Settings" />
+  <img src="docs/screenshots/settings_2.jpeg" width="220" alt="Settings (more)" />
+</p>
+
+## Demo
+
+- **Download APK:** see the [Releases](https://github.com/Shradda23623/Nutrify/releases) page.
+- **Demo video:** _(add a YouTube or Loom link here once recorded)_
 
 ## Features
 
