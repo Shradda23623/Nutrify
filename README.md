@@ -1,5 +1,6 @@
 # Nutrify
 
+![CI](https://github.com/Shradda23623/Nutrify/actions/workflows/flutter.yml/badge.svg)
 ![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?logo=flutter&logoColor=white)
 ![Dart](https://img.shields.io/badge/Dart-3.11-0175C2?logo=dart&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-Auth%20%7C%20Firestore%20%7C%20Storage-FFCA28?logo=firebase&logoColor=black)
@@ -7,6 +8,12 @@
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 A cross-platform nutrition, fitness, and wellness tracker built with Flutter and Firebase. Nutrify combines food scanning, calorie and micronutrient tracking, activity monitoring, and habit tools (water, sleep, fasting, reminders) into a single app.
+
+<p align="center">
+  <img src="docs/screenshots/demo.gif" width="280" alt="Nutrify in action" />
+</p>
+
+> Replace `docs/screenshots/demo.gif` with a 10–15 second screen recording of the app in use. Until then, the screenshot gallery below shows the full feature set.
 
 ## Screenshots
 
@@ -108,6 +115,22 @@ A cross-platform nutrition, fitness, and wellness tracker built with Flutter and
 - Email/password auth and Google Sign-In
 - Cloud sync via Cloud Firestore
 - Profile photos stored in Firebase Storage
+
+## Technical Highlights
+
+**Composing two scanning pipelines into one feature.** The food scanner combines `mobile_scanner` for barcode reads and `google_mlkit_text_recognition` for OCR on nutrition labels. Each pipeline runs against the same camera feed but is optimized for a different shape of input — barcodes are short, deterministic, and queried against an external API; labels are noisy free-form text that needs post-processing to map to macro/micro fields. Picking when to dispatch each path turned out to be the most interesting design problem in the app.
+
+**State management with Provider, deliberately.** I chose `provider` over Riverpod or BLoC because the app is feature-sliced (each tracker owns its own state) rather than dominated by global flows. ChangeNotifier-based stores keep widget code simple and make it obvious where re-renders come from. Where I needed cross-feature reactivity — for example, when logging a meal updates both the calorie tracker and the progress chart — I kept the chain explicit instead of leaning on a global event bus.
+
+**Offline-first habit data, online-first social/sync data.** Anything tied to streaks and momentum (water, sleep, fasting, steps) writes to `shared_preferences` first and reconciles with Firestore on next launch — so a moment of bad signal never breaks a streak. Profile data, custom foods, and historical aggregates live in Firestore as the source of truth.
+
+**Firebase wired across five surfaces.** Auth (email/password + Google Sign-In), Cloud Firestore (per-user collections with Firestore security rules), Storage (profile photos), Cloud Messaging (remote reminders), and a shared client config that works on Android, iOS, and Web from a single `firebase_options.dart`.
+
+**BLE wearable integration with disconnect tolerance.** `flutter_blue_plus` powers the optional wearable device connection. Pairing state, scan timeouts, and reconnect-on-resume are handled so a lost connection during a workout doesn't drop activity data — the device service caches the last known characteristic values and replays them when the connection comes back.
+
+**Local push notifications with custom tones.** `flutter_local_notifications` + `audioplayers` + `timezone` give users meal/water/sleep reminders that fire at the right local time even after a device timezone change, with user-selectable notification sounds bundled in `assets/sounds/`.
+
+**Cross-platform from one codebase.** Same Flutter/Dart source compiles to Android, iOS, and Web. Adaptive launcher icons (Android API 26+), `remove_alpha_ios`, and a Web build with theme color are all configured in `pubspec.yaml`.
 
 ## Tech Stack
 
@@ -232,4 +255,8 @@ This project is released under the MIT License. See `LICENSE` for details.
 
 ## Author
 
-Built by **Shradda** — [github.com/Shradda23623](https://github.com/Shradda23623)
+Built by **Shradda**, currently open to software engineering internships and new-grad roles in mobile, full-stack, or backend development.
+
+- GitHub — [Shradda23623](https://github.com/Shradda23623)
+- LinkedIn — _add your LinkedIn URL here_
+- Email — shradda141@gmail.com
