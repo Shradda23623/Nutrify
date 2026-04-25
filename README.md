@@ -240,14 +240,21 @@ Nutrify requests the following permissions at runtime:
 
 ## Roadmap
 
-- Recipe builder with automatic nutrition calculation
-- Richer wearable integrations (Fitbit, Apple Health, Google Fit)
-- Weekly and monthly nutrition reports
-- Social / accountability features
+Concrete next milestones, in priority order:
+
+- [ ] **Recipe builder** — combine logged ingredients into a saved recipe with auto-calculated macros and per-serving breakdown.
+- [ ] **Weekly + monthly nutrition reports** — exportable summary cards covering calorie balance, macro distribution, and streak performance.
+- [ ] **Apple Health and Google Fit sync** — two-way sync for weight, steps, and active calories so users don't have to log the same data twice.
+- [ ] **Fitbit integration** — read activity, sleep, and heart-rate data via the Fitbit Web API.
+- [ ] **Custom meal templates** — save a logged meal (e.g., "weekday lunch") and re-log it with one tap.
+- [ ] **Web build deployment** — ship the existing Flutter Web build to Firebase Hosting so the app is reachable without an install.
+- [ ] **Accountability / sharing** — opt-in friend leaderboards for steps, hydration, and fasting streaks.
+
+Have a suggestion? Open a [feature request](https://github.com/Shradda23623/Nutrify/issues/new?template=feature_request.md).
 
 ## Contributing
 
-Contributions are welcome. Please open an issue describing the change you would like to make before submitting a pull request.
+Contributions are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) for the workflow, code-quality checklist, and development setup. For anything beyond a typo fix, open an issue using one of the [issue templates](.github/ISSUE_TEMPLATE) before starting work.
 
 ## License
 

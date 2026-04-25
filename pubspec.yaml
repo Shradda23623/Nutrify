@@ -1,5 +1,5 @@
 name: nutrify
-description: "A new Flutter project."
+description: "Cross-platform Flutter + Firebase nutrition, fitness, and wellness tracker — barcode scanning, ML Kit OCR, BLE wearable support, intermittent fasting, and progress charts."
 publish_to: 'none'
 
 version: 1.0.0+1
